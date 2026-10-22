@@ -632,21 +632,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 <div class="mb-6">
                     <label for="donorEmail" class="block text-xs font-semibold text-slate-300 mb-2">Your Email Address (to receive payment link)</label>
-                    <input id="donorEmail" type="email" placeholder="name@example.com" class="w-full bg-white/5 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-hopeAmber transition-colors">
-                </div>
-
-                <div class="flex items-center justify-between bg-white/5 border border-white/10 rounded-xl px-4 py-3 mb-6 text-sm" aria-live="polite">
-                    <span class="text-slate-300">Selected Contribution</span>
-                    <span id="selectionTotal" class="font-heading font-extrabold text-xl text-hopeAmber">$25</span>
-                </div>
-
-                <button type="button" id="donateBtn" class="w-full bg-gradient-to-r from-hopeGold to-hopeAmber text-trustBlue font-heading font-extrabold py-4 rounded-xl text-lg shadow-xl shadow-amber-600/20 hover:scale-[1.015] active:scale-[0.99] transition-all flex items-center justify-center gap-3">
-                    <i class="fas fa-paper-plane"></i> <span id="donateBtnLabel">Request Payment Link ($25)</span>
-                </button>
-
-                <div id="donateNotice" class="hidden mt-5 rounded-xl border border-hopeAmber/40 bg-hopeAmber/10 p-4 text-sm text-amber-100 leading-relaxed" role="status"></div>
-            </div>
-        </div>
+<!-- Direct Proceed Button (Without Email Field) -->
+            <button type="button" onclick="openDonationModal()" class="w-full bg-gradient-to-r from-hopeGold to-hopeAmber text-trustBlue font-heading font-bold py-4 rounded-2xl text-lg shadow-lg shadow-amber-500/25 hover:opacity-95 transition-all cursor-pointer flex items-center justify-center gap-3">
+                <i class="fas fa-hand-holding-heart"></i> Proceed to Donate Now
+            </button>        </div>
     </section>
 
     <!-- FOOTER -->
